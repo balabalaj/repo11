@@ -1,49 +1,25 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>org.apache.maven.aggregator</groupId>
-  <artifactId>maven-aggregator</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
-
-  <name>Aggregator POM for the whole source code of Maven project</name>
-  <url>https://maven.apache.org/</url>
-  <organization>
-    <name>The Apache Software Foundation</name>
-    <url>https://www.apache.org/</url>
-  </organization>
-  <licenses>
-    <license>
-      <name>Apache License, Version 2.0</name>
-      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-
-  <scm>
-    <connection>scm:git:https://gitbox.apache.org/repos/asf/maven-sources.git</connection>
-    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/maven-sources.git</developerConnection>
-    <url>https://github.com/apache/maven-sources/tree/${project.scm.tag}</url>
-    <tag>HEAD</tag>
-  </scm>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.install.skip>true</maven.install.skip><!-- aggregator POMs not intended to be installed -->
-    <maven.deploy.skip>true</maven.deploy.skip><!-- aggregator POMs not intended to be deployed -->
-  </properties>
-
-  <modules>
-    <module>core</module>
-    <module>doxia</module>
-    <module>misc</module>
-    <module>plexus</module>
-    <module>plugins</module>
-    <module>shared</module>
-    <!--module>sisu</module--><!-- disabled: failing for unknown reason -->
-    <module>studies</module>
-    <module>../../site</module>
-    <module>svn</module>
-  </modules>
-</project>
+<project xmlns="http://maven.apache.org/POM/4.0.0"   
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0   
+http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  
+  <modelVersion>4.0.0</modelVersion>  
+  
+  <groupId>com.javatpoint.application1</groupId>  
+  <artifactId>my-application1</artifactId>  
+  <version>1.0</version>  
+  <packaging>jar</packaging>  
+  
+  <name>Maven Quick Start Archetype</name>  
+  <url>http://maven.apache.org</url>  
+  
+  <dependencies>  
+    <dependency>  
+      <groupId>junit</groupId>  
+      <artifactId>junit</artifactId>  
+      <version>4.8.2</version>  
+      <scope>test</scope>  
+    </dependency>  
+  </dependencies>  
+  
+</project> 

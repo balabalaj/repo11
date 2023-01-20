@@ -13,11 +13,11 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <name>Maven Quick Start Archetype</name>  
   <url>https://github.com/balabalaj/repo11.git</url>
   <build>
-    <resources>
-      <resource>
+    <repositories>
+      <repository>
         <directory>java.source</directory>
-      </resource>
-    </resources>
+      </repositories>
+    </repository>
    </build>
   
   <dependencies>  
